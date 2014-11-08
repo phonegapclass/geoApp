@@ -22,9 +22,9 @@ var fn = {
         }*/
     }
 };
-$(geoloc.deviceready);
+$(fn.init);
 
-var geoloc = {
+/*var geoloc = {
     lat: null,
     lon: null,
     deviceready: function(){
@@ -39,5 +39,5 @@ var geoloc = {
     onError: function(error){
         alert('code: '    + error.code    + '\n' +
               'message: ' + error.message + '\n');
-    }*/
-}
+    }
+}*/
