@@ -29,7 +29,7 @@ var geoloc = {
     deviceready: function(){
         alert();
         //document.addEventListener('deviceready',fn.init,false);
-    },
+    }/*,
     onSuccess: function(position){
         geoloc.lat = position.coords.latitude;
         geoloc.lon = position.coords.longitude;
@@ -37,5 +37,5 @@ var geoloc = {
     onError: function(error){
         alert('code: '    + error.code    + '\n' +
               'message: ' + error.message + '\n');
-    }
+    }*/
 };
