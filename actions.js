@@ -21,8 +21,6 @@
         }
     }
 };*/
-$(geoloc.device);
-
 var geoloc = {
     device: function(){
         alert();
@@ -36,4 +34,5 @@ var geoloc = {
         alert('code: '    + error.code    + '\n' +
               'message: ' + error.message + '\n');
     }*/
-}
+};
+$(geoloc.device);
