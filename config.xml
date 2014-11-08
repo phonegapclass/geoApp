@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<widget xmlns = "http://www.w3.org/ns/widgets"
+
+    xmlns:gap   = "http://phonegap.com/ns/1.0"
+    id          = "mx.cenet.geoapp"
+    version     = "0.0.1"
+    versionCode = "10" >
+
+    <!-- versionCode is optional and Android only -->
+
+    <preference name="phonegap-version" value="3.6.0" />
+
+    <name>GeoApp</name>
+
+    <description>
+        Aplicación de geolocalizacón. 
+    </description>
+
+    <author href="http://cenet.mx" email="carlos@cenet.mx">
+        Carlos Celma
+    </author>
+    
+    <gap:plugin name="org.apache.cordova.geolocation" />
+
+</widget>
