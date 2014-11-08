@@ -22,14 +22,14 @@ var fn = {
         }*/
     }
 };
-$(fn.init);
+$(geoloc.deviceready);
 
-/*var geoloc = {
+var geoloc = {
     lat: null,
     lon: null,
     deviceready: function(){
         alert();
-        document.addEventListener('deviceready',fn.init,false);
+        //document.addEventListener('deviceready',fn.init,false);
     }/*,
     onSuccess: function(position){
         alert(2);
@@ -40,4 +40,4 @@ $(fn.init);
         alert('code: '    + error.code    + '\n' +
               'message: ' + error.message + '\n');
     }
-}*/
+};
