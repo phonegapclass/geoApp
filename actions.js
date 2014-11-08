@@ -1,6 +1,16 @@
 var fn = {
     init: function(){
         navigator.geolocation.getCurrentPosition(geoloc.onSuccess, geoloc.onError);
+    }
+};
+var geoloc = {
+    device: function(){
+        //alert();
+        document.addEventListener('deviceready',fn.init,false);
+    },
+    onSuccess: function(position){
+        geoloc.lat = position.coords.latitude;
+        geoloc.lon = position.coords.longitude;
         if(geoloc.lat != undefined && geoloc.lon != undefined){
             //Posición del mapa
             var latlng = new google.maps.LatLng(geoloc.lat, geoloc.lon);
@@ -19,16 +29,6 @@ var fn = {
         }else{
             $('#map_canvas').text('Error al asignar latitud y longitud');
         }
-    }
-};
-var geoloc = {
-    device: function(){
-        //alert();
-        document.addEventListener('deviceready',fn.init,false);
-    },
-    onSuccess: function(position){
-        geoloc.lat = position.coords.latitude;
-        geoloc.lon = position.coords.longitude;
     },
     onError: function(error){
         alert('code: '    + error.code    + '\n' +
