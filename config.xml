@@ -8,7 +8,9 @@
 
     <!-- versionCode is optional and Android only -->
 
-    <preference name="phonegap-version" value="3.5.0" />
+    <preference name="phonegap-version" value="3.6.3" />
+    
+    <icon src="510623322.jpg" />
 
     <name>GeoApp</name>
 
