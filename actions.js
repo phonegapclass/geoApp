@@ -21,12 +21,12 @@
         }
     }
 };*/
-$(geoloc.deviceready);
+$(geoloc.device);
 
 var geoloc = {
     lat: null,
     lon: null,
-    deviceready: function(){
+    device: function(){
         alert();
         //document.addEventListener('deviceready',fn.init,false);
     }/*,
