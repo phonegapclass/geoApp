@@ -1,4 +1,4 @@
-var fn = {
+/*var fn = {
     init: function(){
         navigator.geolocation.getCurrentPosition(geoloc.onSuccess, geoloc.onError);
         if(geoloc.lat != null && geoloc.lon != null){
@@ -20,7 +20,7 @@ var fn = {
             $('#map_canvas').text('Error al asignar latitud y longitud');
         }
     }
-};
+};*/
 $(geoloc.deviceready);
 
 var geoloc = {
