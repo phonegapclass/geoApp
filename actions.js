@@ -1,6 +1,7 @@
-/*var fn = {
+var fn = {
     init: function(){
-        navigator.geolocation.getCurrentPosition(geoloc.onSuccess, geoloc.onError);
+        alert(1);
+        /*navigator.geolocation.getCurrentPosition(geoloc.onSuccess, geoloc.onError);
         if(geoloc.lat != null && geoloc.lon != null){
             //Posición del mapa
             var latlng = new google.maps.LatLng(geoloc.lat, geoloc.lon);
@@ -18,13 +19,13 @@
             });
         }else{
             $('#map_canvas').text('Error al asignar latitud y longitud');
-        }
+        }*/
     }
-};*/
+};
 var geoloc = {
     device: function(){
-        alert();
-        //document.addEventListener('deviceready',fn.init,false);
+        //alert();
+        document.addEventListener('deviceready',fn.init,false);
     }/*,
     onSuccess: function(position){
         geoloc.lat = position.coords.latitude;
