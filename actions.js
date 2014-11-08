@@ -24,8 +24,6 @@
 $(geoloc.device);
 
 var geoloc = {
-    lat: null,
-    lon: null,
     device: function(){
         alert();
         //document.addEventListener('deviceready',fn.init,false);
@@ -38,4 +36,4 @@ var geoloc = {
         alert('code: '    + error.code    + '\n' +
               'message: ' + error.message + '\n');
     }*/
-};
+}
