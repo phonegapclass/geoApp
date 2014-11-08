@@ -27,7 +27,8 @@ var geoloc = {
     lat: null,
     lon: null,
     deviceready: function(){
-        document.addEventListener('deviceready',fn.init,false);
+        alert();
+        //document.addEventListener('deviceready',fn.init,false);
     },
     onSuccess: function(position){
         geoloc.lat = position.coords.latitude;
