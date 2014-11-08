@@ -1,5 +1,6 @@
 var fn = {
     init: function() {
+        alert(1);
         navigator.geolocation.getCurrentPosition(geoloc.onSuccess, geoloc.onError);
         if(geoloc.lat != null && geoloc.lon != null){
             //Posición del mapa
@@ -27,9 +28,11 @@ var geoloc = {
     lat: null,
     lon: null,
     deviceready: function(){
+        alert();
         document.addEventListener('deviceready',fn.init,false);
     },
     onSuccess: function(position){
+        alert(2);
         geoloc.lat = position.coords.latitude;
         geoloc.lon = position.coords.longitude;
     },
